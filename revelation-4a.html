@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Revelation Lesson 4A</title>
+
+<!-- ============================================================
+     TO MAKE A NEW LESSON: copy this file, give it a new name,
+     and change only the two things in this box.
+       1. VIDEO: the YouTube link
+       2. SEGMENTS: one line per segment, the same way your
+          Word timeline is written:  start - end  Title
+     A length in parentheses at the end, like (2m21s), is ignored.
+     ============================================================ -->
+<script id="lesson" type="text/plain">
+TITLE: Revelation Lesson 4A
+VIDEO: https://www.youtube.com/watch?v=N8dz6YaODAs
+
+2:03 - 4:26 Brief Review of First Three Chapters
+5:24 - 6:13 Revelation's Outline of Church Age Illustrated
+11:58 - 12:42 Where Does Church Age Fit in Overall Timeline?
+13:24 - 14:13 The Age of the Gentiles (Luke 21:24)
+14:14 - 15:53 Gentile Nations' Rule of Jewish Nation ~2600 Yrs
+16:30 - 17:25 Prologue to Revelation from the Book of Daniel
+18:15 - 18:34 Illustration of the Age of Gentiles & Church Age
+20:18 - 21:19 First Fall of Israel According to God's Will (~600 BC)
+25:03 - 28:26 Daniel's Description of the Dream (Dan 2:31-38)
+31:04 - 32:48 God Facilitates Nebuchadnezzar's Reign over Israel
+32:48 - 36:11 Statue's Chronology of Kingdoms over Israel (Dan 2:39)
+37:52 - 38:44 Succession from Babylonian to Medo-Persian Empire
+40:27 - 42:40 Succession from Medo-Persia to Greek Empire (330 BC)
+43:07 - 46:26 Fourth Kingdom of Rome (63 BC) (Dan 2:40-43)
+48:55 - 53:07 Holy Roman Empire's Evolution into Today's Governance
+53:08 - 56:03 The Ending of the Age of Gentiles (Dan 2:44-45)
+59:55 - 1:00:37 Uncut Stone (Rock) Ends the Age of the Gentiles
+1:01:23 - 1:03:20 Summary - Where Are We?
+</script>
+<!-- ======================= end of lesson box ======================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#12161d; --surface:#1a2029; --raised:#222a35; --ink:#e9ebf0; --muted:#9aa3b2; --line:#2c3441;
+  --accent:#d9a24e; --accent-ink:#1a1206; --accent-soft:#2b2318; --done:#7cc4a0;
+  --display:"Spectral",Georgia,serif; --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 var(--body)}
+.app{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;height:100%;padding:18px max(16px,env(safe-area-inset-right)) 18px max(16px,env(safe-area-inset-left))}
+.stage{display:flex;flex-direction:column;gap:14px;min-width:0;min-height:0}
+.videobox{position:relative;width:100%;aspect-ratio:16/9;max-height:calc(100vh - 210px);background:#000;border-radius:12px;overflow:hidden;margin:0 auto}
+#player{position:absolute;inset:0;width:100%;height:100%}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:24px;
+  background:rgba(10,12,16,.88);}
+.overlay h2{font-family:var(--display);font-size:clamp(24px,3.4vw,40px);margin:0;max-width:24ch;text-wrap:balance}
+.overlay p{margin:0;color:var(--muted);font-size:clamp(15px,1.5vw,19px);max-width:46ch}
+.bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.now{flex:1 1 320px;min-width:0}
+.now .lab{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.now h1{font-family:var(--display);font-size:clamp(20px,2.2vw,28px);margin:2px 0 0;line-height:1.2;text-wrap:balance}
+.now .t{font-family:var(--mono);color:var(--muted);font-size:14px}
+.ctrls{display:flex;gap:10px;flex-wrap:wrap}
+button{font:600 16px/1 var(--body);border-radius:10px;padding:13px 18px;border:1px solid var(--line);background:var(--raised);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--muted)}
+button:disabled{opacity:.4;cursor:default}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-size:18px;padding:14px 26px}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.side{display:flex;flex-direction:column;min-height:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.side header{padding:14px 16px;border-bottom:1px solid var(--line)}
+.side header .lt{font-family:var(--display);font-size:20px;font-weight:700}
+.side header .meta{font-size:13px;color:var(--muted)}
+ol{list-style:none;margin:0;padding:6px;overflow-y:auto;flex:1}
+li button{width:100%;display:grid;grid-template-columns:30px 1fr;gap:10px;text-align:left;padding:10px;border:0;background:none;border-radius:8px;font-weight:500;line-height:1.3}
+li button:hover{background:var(--raised)}
+li .n{font-family:var(--mono);font-size:13px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);color:var(--muted)}
+li .tt{font-size:15px}
+li .tm{display:block;font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:2px;font-weight:500}
+li.done .n{border-color:var(--done);color:var(--done)}
+li.cur button{background:var(--accent-soft)}
+li.cur .n{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.keys{padding:10px 16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+kbd{font-family:var(--mono);border:1px solid var(--line);border-radius:4px;padding:0 5px;background:var(--raised);color:var(--ink)}
+[hidden]{display:none!important}
+@media (max-width:980px){.app{grid-template-columns:1fr;height:auto}.side{max-height:none}.videobox{max-height:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <main class="stage">
+    <div class="videobox">
+      <div id="player"></div>
+      <div class="overlay" id="startOv">
+        <h2 id="ovTitle">Ready</h2>
+        <p id="ovText">Press Play to start Segment 1.</p>
+        <button class="primary" id="ovBtn" type="button">▶ Play segment 1</button>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="now">
+        <div class="lab" id="nowLab"></div>
+        <h1 id="nowTitle"></h1>
+        <div class="t" id="nowTime"></div>
+      </div>
+      <div class="ctrls">
+        <button id="prevBtn" type="button">← Previous</button>
+        <button id="replayBtn" type="button">↺ Replay</button>
+        <button class="primary" id="nextBtn" type="button">Next segment →</button>
+      </div>
+    </div>
+  </main>
+  <aside class="side">
+    <header><div class="lt" id="lessonTitle"></div><div class="meta" id="lessonMeta"></div></header>
+    <ol id="list"></ol>
+    <div class="keys"><kbd>→</kbd> next &nbsp; <kbd>←</kbd> previous &nbsp; <kbd>R</kbd> replay &nbsp; <kbd>Space</kbd> pause / play</div>
+  </aside>
+</div>
+
+<script>
+/* ---------- read the lesson box ---------- */
+const raw=document.getElementById("lesson").textContent.replace(/ɑ/g,"a");
+const sec=s=>s.split(":").map(Number).reduce((a,n)=>a*60+n,0);
+const fmt=n=>{const h=Math.floor(n/3600),m=Math.floor(n%3600/60),s=n%60;return (h?h+":"+String(m).padStart(2,"0"):m)+":"+String(s).padStart(2,"0")};
+const len=n=>{const m=Math.floor(n/60),s=n%60;return m?`${m}m ${s}s`:`${s}s`};
+let TITLE="Lesson", VID="";
+const SEGS=[];
+raw.split("\n").forEach(line=>{
+  line=line.trim(); if(!line) return;
+  let m;
+  if((m=line.match(/^TITLE:\s*(.+)$/i))){TITLE=m[1];return}
+  if((m=line.match(/^VIDEO:\s*(.+)$/i))){const v=m[1].match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/);VID=v?v[1]:m[1].trim();return}
+  if((m=line.match(/^(\d{1,2}(?::\d{1,2}){1,2})\s*[-–—]\s*(\d{1,2}(?::\d{1,2}){1,2})\s*(.*)$/))){
+    const t=m[3].replace(/\s*\(\s*(\d+\s*m)?\s*\d+\s*s\s*\)\s*$/i,"").trim();
+    SEGS.push({s:sec(m[1]),e:sec(m[2]),t:t||"Segment"});
+  }
+});
+document.title=TITLE;
+document.getElementById("lessonTitle").textContent=TITLE;
+document.getElementById("lessonMeta").textContent=`${SEGS.length} segments · ${len(SEGS.reduce((a,g)=>a+g.e-g.s,0)).replace(/^(\d+)m/,(x,m)=>m>=60?`${Math.floor(m/60)}h ${m%60}m`:x)} of video`;
+
+/* ---------- state ---------- */
+let cur=0, started=false, ready=false, player=null, timer=null;
+const done=new Set();
+const $=id=>document.getElementById(id);
+
+function renderList(){
+  const ol=$("list"); ol.innerHTML="";
+  SEGS.forEach((g,i)=>{
+    const li=document.createElement("li");
+    li.className=(i===cur&&started?"cur":"")+(done.has(i)?" done":"");
+    li.innerHTML=`<button type="button"><span class="n">${done.has(i)&&!(i===cur&&started)?"✓":i+1}</span><span><span class="tt"></span><span class="tm">${fmt(g.s)} – ${fmt(g.e)} · ${len(g.e-g.s)}</span></span></button>`;
+    li.querySelector(".tt").textContent=g.t;
+    li.querySelector("button").onclick=()=>play(i);
+    ol.appendChild(li);
+  });
+  const c=ol.children[cur]; if(c&&started) c.scrollIntoView({block:"nearest"});
+}
+function renderNow(){
+  const g=SEGS[cur];
+  $("nowLab").textContent=`Segment ${cur+1} of ${SEGS.length}`;
+  $("nowTitle").textContent=g.t;
+  $("nowTime").textContent=`${fmt(g.s)} – ${fmt(g.e)} · ${len(g.e-g.s)}`;
+  $("prevBtn").disabled=cur===0;
+  $("nextBtn").disabled=started&&cur>=SEGS.length-1;
+  $("nextBtn").textContent=started?"Next segment →":"▶ Play segment 1";
+}
+function overlay(title,text,btn){
+  $("ovTitle").textContent=title; $("ovText").textContent=text;
+  $("ovBtn").textContent=btn; $("ovBtn").hidden=!btn; $("startOv").hidden=false;
+}
+
+/* ---------- playback ---------- */
+function play(i){
+  if(!ready) return;
+  cur=Math.max(0,Math.min(i,SEGS.length-1)); started=true;
+  const g=SEGS[cur];
+  $("startOv").hidden=true;
+  player.loadVideoById({videoId:VID,startSeconds:g.s,endSeconds:g.e});
+  clearInterval(timer);
+  timer=setInterval(watch,200);
+  renderNow(); renderList();
+}
+function watch(){
+  const g=SEGS[cur]; if(!player||!player.getCurrentTime) return;
+  const t=player.getCurrentTime(), st=player.getPlayerState();
+  if(t>=g.e-0.25 || st===YT.PlayerState.ENDED){
+    clearInterval(timer);
+    if(st!==YT.PlayerState.PAUSED) player.pauseVideo();
+    finished();
+  }
+}
+function finished(){
+  done.add(cur); renderList();
+  const last=cur>=SEGS.length-1;
+  if(last) overlay("All segments done", `That was the last segment of ${TITLE}.`, "↺ Replay last segment");
+  else overlay(`Segment ${cur+1} finished`, `Up next: ${cur+2}. ${SEGS[cur+1].t}`, `▶ Play segment ${cur+2}`);
+  $("ovBtn").onclick=()=>play(last?cur:cur+1);
+}
+function next(){ play(started?cur+1:0) }
+$("ovBtn").onclick=()=>play(0);
+$("nextBtn").onclick=next;
+$("prevBtn").onclick=()=>play(cur-1);
+$("replayBtn").onclick=()=>play(cur);
+document.addEventListener("keydown",e=>{
+  if(e.target.tagName==="BUTTON"&&(e.key===" "||e.key==="Enter")) return;
+  if(e.key==="ArrowRight"||e.key==="n"){e.preventDefault();next()}
+  else if(e.key==="ArrowLeft"||e.key==="p"){e.preventDefault();play(cur-1)}
+  else if(e.key==="r"||e.key==="R"){e.preventDefault();play(cur)}
+  else if(e.key===" "&&player&&started){e.preventDefault();
+    const st=player.getPlayerState();
+    if(st===YT.PlayerState.PLAYING){player.pauseVideo()}
+    else{ if(player.getCurrentTime()>=SEGS[cur].e-0.3) return; $("startOv").hidden=true; player.playVideo(); clearInterval(timer); timer=setInterval(watch,200)}
+  }
+});
+
+renderNow(); renderList();
+if(location.protocol==="file:"){
+  overlay("Open this from your website","YouTube won't play videos in a page opened from a file on your computer. Open the web address for this page instead.","");
+}
+
+/* ---------- YouTube player ---------- */
+window.onYouTubeIframeAPIReady=function(){
+  player=new YT.Player("player",{
+    videoId:VID,
+    playerVars:{rel:0,modestbranding:1,playsinline:1,start:SEGS[0]?SEGS[0].s:0,origin:location.origin},
+    events:{
+      onReady:()=>{ready=true},
+      onError:e=>{
+        const msg={2:"The video link in the lesson box isn't right.",100:"This video was removed or made private.",101:"The video's owner doesn't allow it to play on other sites.",150:"The video's owner doesn't allow it to play on other sites.",153:"YouTube needs this page opened from its web address, not from a file."}[e.data]||"YouTube couldn't play the video (error "+e.data+").";
+        overlay("Video can't play",msg,"");
+      }
+    }
+  });
+};
+const s=document.createElement("script"); s.src="https://www.youtube.com/iframe_api"; document.head.appendChild(s);
+</script>
+</body>
+</html>
